@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-emerald-50: #FAF3F3;
+  --color-emerald-100: #F5E7E7;
+  --color-emerald-200: #EBCFCF;
+  --color-emerald-300: #E1B7B7;
+  --color-emerald-400: #D79F9F;
+  --color-emerald-500: #CD8787;
+  --color-emerald-600: #B76E79;
+  --color-emerald-700: #A1616A;
+  --color-emerald-800: #8B545C;
+  --color-emerald-900: #75474D;
+}
+
+@layer utilities {
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
