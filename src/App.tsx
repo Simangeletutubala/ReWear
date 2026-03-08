@@ -1,6 +1,7 @@
 import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './context/AuthContext';
+import { ToastProvider } from './context/ToastContext';
 import { DesktopNav, BottomNav } from './components/Navbar';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -73,5 +74,3 @@ export default function App() {
     </Router>
   );
 }
-
-import { ToastProvider } from './context/ToastContext';
